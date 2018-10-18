@@ -16,7 +16,6 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a
   # debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
-  gem 'rspec-rails', '~> 3.8'
   gem 'rubocop', '~> 0.59.2', require: false
 end
 
@@ -25,6 +24,13 @@ group :development do
   # running in the background.
   # Read more: https://github.com/rails/spring
   gem 'spring'
+end
+
+group :test do
+  gem 'cucumber-rails', require: false
+  # database_cleaner is not required, but highly recommended
+  gem 'database_cleaner'
+  gem 'rspec-rails', '~> 3.8'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
