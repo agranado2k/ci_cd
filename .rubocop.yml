@@ -4,6 +4,7 @@ AllCops:
     - 'config.ru'
     - 'bin/*'
     - 'config/**/*.rb'
+    - 'vendor/**/*.rb'
 
 Metrics/LineLength:
   IgnoredPatterns: ['\A#']
