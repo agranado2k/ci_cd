@@ -4,3 +4,9 @@ rvm:
 script:
   - bundle exec rspec
   - bundle exec cucumber
+
+deploy:
+  provider: heroku
+  app: agcicd
+  api_key:
+    secure: 733d9c93-852b-47d4-99ae-4ae757feaa39
