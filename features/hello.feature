@@ -6,7 +6,7 @@ Feature: Say Hello World!
 
   Scenario: Say default message
     Given An anonymous user
-    When the client request GET "/say"
+    When the client request GET "/v1//says"
     Then the response should be JSON:
     """
     { "message": "Hello World!" }
